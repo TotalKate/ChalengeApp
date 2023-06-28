@@ -1,8 +1,10 @@
-﻿string imię = "Ewa";
-string płeć = "Kobieta";
-var wiek = 33;
+﻿using System.ComponentModel.Design;
 
-if (wiek < 30)
+string imię = "Ewa";
+string płeć = "Mężczyzna";
+var wiek = 30;
+
+if (wiek > 30)
 {
     Console.WriteLine("Kobieta powyżej 30 lat");
 }
@@ -13,24 +15,17 @@ else
 
 if (imię == "Ewa")
 {
-    if (wiek > 30)
-    {
-        Console.WriteLine("Ewa, lat 33");
-    }
-    else
-    {
-        Console.WriteLine("Kobieta poniżej 30 lat");
-    }
+    Console.WriteLine("Ewa, lat 33");
 }
-
-if(płeć=="Kobieta")
+else
 {
-    if (wiek<18)
-    { 
-        Console.WriteLine("Kobieta niepełnoletnia");
-    }
-    else
-    {
-        Console.WriteLine("Mężczyzna niepełnoletni");
-    }
+
+}
+if (płeć=="Kobieta")
+{
+    Console.WriteLine("Kobieta niepełnoletnia");
+}
+else
+{
+    Console.WriteLine("Mężczyzna niepełnoletni");
 }
